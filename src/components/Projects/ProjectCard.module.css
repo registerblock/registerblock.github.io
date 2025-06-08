@@ -1,0 +1,56 @@
+.card {
+  background: #1e1e1e;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  color: white;
+  flex-shrink: 0;
+  transition: transform 0.3s all ease;
+}
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  border-color: #666;
+  background: #2a2a2a;
+}
+.card .image {
+  border-radius: 12px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 24px;
+}
+.card .title {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 28.8px;
+  margin-bottom: 8px;
+}
+.card .subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+.card .button {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #949494;
+  border-radius: 8px;
+  background: #303030;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  line-height: 16px;
+}
+.card .button:hover {
+  background: rgba(255, 255, 255, 0.1333333333);
+  border-color: #ccc;
+}/*# sourceMappingURL=ProjectCard.module.css.map */

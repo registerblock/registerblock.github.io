@@ -1,0 +1,25 @@
+.sliderSection {
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media(max-width:767px) {
+        padding: 64px 0;
+    }
+
+    .heading {
+        color: white;
+        font-size: 24px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        line-height: 28.80px;
+        word-wrap: break-word;
+        margin-bottom: 20px;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+}

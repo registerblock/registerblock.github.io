@@ -1,0 +1,138 @@
+.hero {
+    background-color: #0f0f0f; // Pure value
+    color: white;
+    padding: 100px 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 800px;
+
+    @media(max-width:768px) {
+        padding: 50px 16px;
+        min-height: unset;
+    }
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            gap: 32px;
+        }
+    }
+
+    .imageWrapper {
+        flex: 1;
+        display: block;
+        height: auto;
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .content {
+        flex: 1;
+        padding-left: 50px;
+
+        .title {
+            font-size: 72px;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            line-height: 86.4px;
+            margin-bottom: 8px;
+
+            @media (max-width: 768px) {
+                font-size: 48px;
+                line-height: 56px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 24px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05); // Hafif şeffaf arka plan
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); // Güzel bir kart gölgesi
+            backdrop-filter: blur(8px); // Hafif arkaplan blur efekti (isteğe bağlı)
+            width: calc(100% - 48px); // Sağ ve soldan boşluk bırak
+            max-width: 480px; // Çok büyümesin diye limit
+        }
+
+        .description {
+            font-size: 20px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            line-height: 28px;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 32px;
+
+            @media (max-width: 768px) {
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .getStarted {
+                background-color: white;
+                color: #1e1e1e;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-family: "Inter", sans-serif;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #e0e0e0;
+                }
+            }
+
+            .playIcon {
+                background-color: transparent;
+                border: 2px solid white;
+                color: white;
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: white;
+
+                    svg path {
+                        stroke: black;
+                    }
+                }
+
+                svg {
+                    path {
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}

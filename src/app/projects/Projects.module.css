@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.projectsPage {
+  display: flex;
+  background-color: #1e1e1e;
+  color: white;
+  min-height: 100vh;
+  padding: 24px;
+  gap: 64px;
+}
+
+.sidebar {
+  width: 240px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .sidebar {
+    display: block;
+  }
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+}
+
+.topBar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .topBar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.searchInput {
+  background: #1E1E1E;
+  border: 1px solid #444;
+  border-radius: 20px;
+  outline: none;
+  padding: 12px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+}
+@media (min-width: 768px) {
+  .searchInput {
+    width: 33%;
+  }
+}
+
+.sortButtons {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* IE ve Edge için */
+  scrollbar-width: none; /* Firefox için */
+}
+
+.sortButtons::-webkit-scrollbar {
+  display: none; /* Chrome, Safari için */
+}
+
+.button {
+  padding: 8px;
+  background-color: #444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #B3B3B3;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.active {
+  background-color: #fff;
+  color: #444;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=Projects.module.css.map */

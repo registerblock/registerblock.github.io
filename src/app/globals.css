@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --sds-color-background-default-default: #1E1E1E;
+  --sds-size-stroke-border: 1px;
+  --sds-color-border-neutral-secondary: #949494;
+  --sds-color-border-default-default: #444444;
+  --sds-color-background-neutral-tertiary: #303030;
+  --sds-color-text-default-default: #fff;
+  --sds-color-text-brand-on-brand: #000;
+  --sds-color-text-utilities-text-on-overlay: #fff;
+  --sds-typography-subheading-font-family: "Inter", sans-serif;
+  --sds-size-space-300: 12px;
+  --sds-size-space-600: 24px;
+  --sds-size-space-200: 8px;
+  --sds-size-radius-200: 8px;
+  --sds-typography-body-font-family: "Inter", sans-serif;
+  --sds-typography-title-hero-font-family: "Inter", sans-serif;
+  --sds-typography-title-hero-size: 72px;
+  --sds-typography-title-hero-font-weight: 700;
+  --sds-typography-body-size-medium: 16px;
+  --sds-typography-body-font-weight-regular: 400;
+  --sds-color-background-brand-tertiary: #444444;
+  --sds-color-border-brand-default: #fff;
+  --sds-color-background-brand-default: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sds-color-background-default-default);
+}

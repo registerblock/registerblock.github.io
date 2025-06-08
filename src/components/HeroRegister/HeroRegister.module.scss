@@ -1,0 +1,192 @@
+.hero {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 100px 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    transition: background 0.3s ease-in-out;
+
+    @media (max-width: 768px) {
+        padding: 50px 16px;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        gap: 48px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 32px;
+        }
+    }
+
+    .formContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media (max-width: 768px) {
+            align-items: center;
+            display: none;
+        }
+
+        .title {
+            color: white;
+            font-size: 24px;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            line-height: 28.8px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 32px;
+        }
+
+        .description {
+            color: white;
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            line-height: 22.4px;
+            max-width: 500px;
+        }
+    }
+
+    .card {
+        background-color: #1e1e1e;
+        padding: 24px;
+        border-radius: 8px;
+        width: 100%;
+        border: 1px solid #444444;
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: white;
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            line-height: 22.4px;
+        }
+
+        input {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            border-radius: 8px;
+            outline: none;
+            padding: 12px 16px;
+            line-height: 16px;
+            border: 1px solid #444444;
+            margin-bottom: 24px;
+            background-color: transparent;
+            transition: border-color 0.2s ease;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.4);
+            }
+
+            &:hover,
+            &:focus {
+                border-color: #999;
+            }
+        }
+
+        button {
+            border: none;
+            color: #1e1e1e;
+            background-color: #f5f5f5;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            line-height: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+        }
+    }
+
+    .forgot {
+        display: flex;
+        margin-top: 16px;
+        color: white;
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        justify-content: flex-start;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #f5f5f5;
+        }
+    }
+}
+
+.loginLink {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+  
+    a {
+      color: #aaa;
+      text-decoration: underline;
+  
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  
+
+  .error {
+    color: #ff6b6b;
+    font-size: 13px;
+    margin-top: -20px;
+    margin-bottom: 16px;
+    font-family: "Inter", sans-serif;
+  }
+  

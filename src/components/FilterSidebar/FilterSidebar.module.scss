@@ -1,0 +1,176 @@
+.sidebar {
+    background: #1e1e1e;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid #444444;
+    border-radius: 8px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sectionTitle {
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 22.40px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #333;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.removeBtn {
+    cursor: pointer;
+}
+
+.checkboxWrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    appearance: none;
+    background: transparent;
+    margin-top: 3px;
+    cursor: pointer;
+    position: relative;
+
+    &:checked {
+        background: white;
+    }
+
+    &:checked::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        width: 6px;
+        height: 12px;
+        border: solid #1e1e1e;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}
+
+.labelText {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: white;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        line-height: 22.40px;
+    }
+
+    small {
+        color: rgba(255, 255, 255, 0.70);
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        line-height: 22.40px;
+    }
+}
+
+
+
+
+.sliderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionTitle {
+    color: white;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 22.40px;
+}
+
+.rangeValue {
+    color: white;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 22.40px;
+}
+
+.doubleSlider {
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent; // burada değişiklik
+    pointer-events: none;
+    appearance: none;
+
+    &:first-child {
+        background: #444; // sadece ilk slider arka planı gözüksün
+    }
+
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        pointer-events: auto;
+        margin-top: 0px; // düzeltildi
+    }
+
+    &::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        background: white;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+}

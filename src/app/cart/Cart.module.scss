@@ -1,0 +1,161 @@
+.cartPage {
+    padding: 24px;
+    background: #1e1e1e;
+    color: white;
+    min-height: 100vh;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.separator {
+    border: 1px solid #333;
+    margin: 16px 0;
+}
+
+.subheading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.cartHeader {
+    display: none;
+    padding: 0 16px;
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 16px;
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 8px;
+
+        div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .emptyCell {
+            flex: 6;
+            text-align: left;
+        }
+    }
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: column;
+    background: #2a2a2a;
+    padding: 16px;
+    border-radius: 12px;
+    gap: 16px;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.productArea {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 6;
+}
+
+.selectArea,
+.priceArea,
+.subtotalArea {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dropdown {
+    background: #1e1e1e;
+    width: 100%;
+    border: 1px solid #444;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdownList {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdownItem {
+    padding: 10px;
+    transition: background 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background: #3a3a3a;
+    }
+}
+
+.totalArea {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+
+    @media (max-width: 767px) {
+        align-items: center;
+    }
+}
+
+.totalLine {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.purchaseButton {
+    margin-top: 16px;
+    padding: 12px 24px;
+    background: white;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+        background: #ddd;
+    }
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}

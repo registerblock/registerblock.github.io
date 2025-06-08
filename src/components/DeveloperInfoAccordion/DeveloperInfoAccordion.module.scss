@@ -1,0 +1,63 @@
+.accordionList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.accordionItem {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 22.4px;
+
+    @media (max-width: 640px) {
+        // mobil ekran
+        padding: 12px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.content {
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.4s ease;
+    padding: 0 16px;
+    background: #1e1e1e;
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        line-height: 22.4px;
+
+        @media (max-width: 640px) {
+            // mobil ekran
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.open {
+    max-height: 500px;
+}
