@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
+    "export": "next build && rm -rf web_export && mv out web_export",
     "predeploy": "npm run build"
   },
   "dependencies": {
