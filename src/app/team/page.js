@@ -38,7 +38,7 @@ Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza con
         background="#000000"
       />
       <InfoSection
-        title="Aybars Baskan"
+        title="Aybars Badur"
         subtitle="Chief Digital Officer"
         text="Body text for background of the person. I put in some lorem ipsum to show how a filled-out page might look:
         
