@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "predeploy": "npm run build"
+    "export": "next build && rm -rf public && mv out public",
+    "predeploy": "npm run export"
   },
   "dependencies": {
     "@netlify/next": "^1.4.9",
