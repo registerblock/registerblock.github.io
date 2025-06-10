@@ -16,7 +16,10 @@ export default function Hero() {
                 <div className={styles.content}>
                     <h1 className={styles.title}>Brickchain</h1>
                     <p className={styles.description}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        Invest in real estate the modern way. Brickchain turns buildings
+                        and houses into fractional NFTs so anyone can own a share of a
+                        property. Buy, sell and trade your tokens while receiving your
+                        portion of rental income automatically on chain.
                     </p>
                     <div className={styles.buttons} onClick={() => {
                         router.push('/projects');
