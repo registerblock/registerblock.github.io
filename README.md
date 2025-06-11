@@ -1,3 +1,9 @@
+# Registerblock
+
+[Registerblock](https://registerblock.github.io/) is an fractional nft investment...
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -46,9 +52,3 @@ npm run export
 The exported files will appear in the `web_export` directory. You can deploy
 this folder to GitHub Pages or any other static hosting provider.
 
-# Registerblock
-
-[Registerblock](https://registerblock.github.io/) is an open-source
-dApp that lets you create blockchain-backed registers. It stores
-document hashes on the Ethereum network so your records remain
-verifiable and tamper‑resistant.
