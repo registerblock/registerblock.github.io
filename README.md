@@ -45,4 +45,10 @@ npm run export
 
 The exported files will appear in the `web_export` directory. You can deploy
 this folder to GitHub Pages or any other static hosting provider.
-# registerblock
+
+# Registerblock
+
+[Registerblock](https://registerblock.github.io/) is an open-source
+dApp that lets you create blockchain-backed registers. It stores
+document hashes on the Ethereum network so your records remain
+verifiable and tamper‑resistant.
