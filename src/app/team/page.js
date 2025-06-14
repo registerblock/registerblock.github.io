@@ -35,7 +35,7 @@ Considering the today's digital and mobile transformation, I've tried to set my 
         subtitle="Managing Partner, Technology"
         isHTML={true}
         text="Engineering & Technology Leadership background with 20+ years of experience across Aviation, Logistics, Retail, and Enterprise Software, combining traditional IT management with modern software engineering practices. <br/><br/>
-In today’s agile and cloud-driven transformation, I’ve built my career at the intersection of engineering excellence and business value — focusing on #EngineeringLeadership, #Agile, #Cloud, #DevOps, #DataDrivenStrategy, and #ScalableSystems."
+In today's agile and cloud-driven transformation, I've built my career at the intersection of engineering excellence and business value — focusing on #EngineeringLeadership, #Agile, #Cloud, #DevOps, #DataDrivenStrategy, and #ScalableSystems."
         image={img1}
         background="#000000"
       />
