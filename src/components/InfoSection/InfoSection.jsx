@@ -7,7 +7,8 @@ export default function InfoSection({
     text,
     image,
     reverse = false,
-    background = '#0f0f0f'
+    background = '#0f0f0f',
+    isHTML = false,
 }) {
     return (
         <section
@@ -18,7 +19,15 @@ export default function InfoSection({
                 <div className={styles.content}>
                     <h2 className={styles.title}>{title}</h2>
                     <h4 className={styles.subtitle}>{subtitle}</h4>
-                    <p className={styles.text}>{text}</p>
+                    {/* Conditionally render HTML or plain text */}
+                    {isHTML ? (
+                        <div 
+                            className={styles.text}
+                            dangerouslySetInnerHTML={{ __html: text }} 
+                        />
+                    ) : (
+                        <p className={styles.text}>{text}</p>
+                    )}
                 </div>
                 <div className={styles.imageWrapper}>
                     <Image src={image} alt={title} className={styles.image} />

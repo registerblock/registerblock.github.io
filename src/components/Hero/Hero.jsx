@@ -14,12 +14,12 @@ export default function Hero() {
             <div className={styles.container} >
                 <div className={styles.imageWrapper}></div>
                 <div className={styles.content}>
-                    <h1 className={styles.title}>Brickchain</h1>
+                    <h1 className={styles.title}>Registerblock</h1>
                     <p className={styles.description}>
-                        Invest in real estate the modern way. Brickchain turns buildings
-                        and houses into fractional NFTs so anyone can own a share of a
-                        property. Buy, sell and trade your tokens while receiving your
-                        portion of rental income automatically on chain.
+                    RegisterBlock brings real estate and other tangible assets <br/>
+                    to the blockchain,  making  investing  simple, secure, and <br/>
+                    accessible for everyone. Own fractions of valuable assets  <br/>
+                    and trade them anytime, anywhere.
                     </p>
                     <div className={styles.buttons} onClick={() => {
                         router.push('/projects');
