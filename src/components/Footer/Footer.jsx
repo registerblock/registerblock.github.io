@@ -12,7 +12,6 @@ const footerLinks = [
             { name: '2nd hand trade', url: '/second-hand-trade' },
             { name: 'Sell with Brickchain', url: '/sell-with-brickchain' },
             { name: 'Why brickchain', url: '/why-brickchain' },
-            { name: 'Another link' }, // no URL
         ],
     },
     {
@@ -33,9 +32,6 @@ const footerLinks = [
             { name: 'Career', url: '/career' },
             { name: 'Contact', url: '/contact' },
             { name: 'Team', url: '/team' },
-            { name: 'Support' },
-            { name: 'Developers' },
-            { name: 'Resource library' },
         ],
     },
 ];
