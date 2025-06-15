@@ -30,7 +30,6 @@ const footerLinks = [
     {
         title: 'About Us',
         links: [
-            { name: 'Blog', url: '/blog' },
             { name: 'Career', url: '/career' },
             { name: 'Contact', url: '/contact' },
             { name: 'Team', url: '/team' },
