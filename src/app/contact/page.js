@@ -77,24 +77,9 @@ export default function ContactPage() {
         <button type="submit" className={styles.submitButton}>Send Message</button>
       </form>
 
-      <div className={styles.infoSection}>
-        <h2>Our Office</h2>
-        <p>1234 Dream Street, Istanbul, Turkey</p>
-        <p>Phone: +90 555 123 4567</p>
-        <p>Email: info@example.com</p>
-      </div>
-
-      <div className={styles.mapSection}>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.0384294177837!2d28.978358715409684!3d41.00823797929926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba0a55a2f853%3A0x4c6ef56f8ef8c4b8!2sIstanbul!5e0!3m2!1str!2str!4v1614887204321!5m2!1str!2str"
-          width="100%"
-          height="400"
-          style={{ border: 0, borderRadius: "12px" }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+      <p className={styles.infoSection}>
+        Email us at <a href="mailto:info@registerblock.com">info@registerblock.com</a>
+      </p>
     </div>
   );
 }
