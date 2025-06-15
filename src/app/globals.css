@@ -43,3 +43,9 @@ body {
   align-items: center;
   background-color: var(--sds-color-background-default-default);
 }
+
+.separator {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #444, transparent);
+  margin: 32px 0;
+}

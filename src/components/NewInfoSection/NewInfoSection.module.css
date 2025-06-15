@@ -1,0 +1,131 @@
+.section {
+  background: #1E1E1E;
+  color: #fff;
+  padding: 64px;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 32px 16px;
+  }
+}
+.section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+@media (max-width: 768px) {
+  .section .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+.section .left {
+  flex: 1;
+}
+.section .left .name {
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .section .left .name {
+    justify-content: center;
+  }
+}
+.section .left .name .linkedin {
+  font-size: 20px;
+  background: #0a66c2;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin-left: 8px;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+.section .left .name .linkedin:hover {
+  background: #004182;
+}
+.section .left .title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .section .left .title {
+    text-align: center;
+  }
+}
+.section .left .description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .section .left .description {
+    text-align: center;
+  }
+}
+.section .left .logos {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .section .left .logos {
+    justify-content: center;
+  }
+}
+.section .left .logos .logoItem {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  min-width: 100px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.section .left .logos .logoItem:hover {
+  transform: scale(1.03);
+}
+.section .left .logos .logoItem img {
+  max-height: 32px;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+@media (max-width: 768px) {
+  .section .left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.section .right {
+  flex: 0 0 220px;
+}
+.section .right .imageWrapper {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.section .right .imageWrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=NewInfoSection.module.css.map */
