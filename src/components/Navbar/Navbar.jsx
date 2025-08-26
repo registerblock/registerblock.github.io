@@ -81,7 +81,6 @@ const Navbar = () => {
         { href: "/projects", label: "Projects" },
         { href: "/business-model", label: "Business Model" },
         { href: "/legal", label: "Legal & Security" },
-        { href: "/team", label: "Team" },
         { href: "/contact", label: "Contact" },
     ];
 

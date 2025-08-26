@@ -31,7 +31,6 @@ const footerLinks = [
         links: [
             { name: 'Career', url: '/career' },
             { name: 'Contact', url: '/contact' },
-            { name: 'Team', url: '/team' },
         ],
     },
 ];
